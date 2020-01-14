@@ -21,6 +21,25 @@
 
     </header>
 
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <button class="btn btn-primary" id="Up" data-coffee-button="SignUp">Sign-Up</button>
+            <button class="btn btn-primary" id="In" data-coffee-button="SignIn">Sign-In</button>
+            <button class="btn btn-primary" id="Out" data-coffee-button="SignOut">Sign-Out</button>
+        </div>
+    </div>
+
+    <style>
+        #In {
+            background-color: green;
+        }
+        
+        #Out {
+            background-color: white;
+            color: black;
+        }
+    </style>
+
     <section>
         <div class="panel panel-default">
             <div class="panel-body">
@@ -70,7 +89,7 @@
                         <input name="strength" id="strengthLevel" type="range" value="30">
                     </div>
 
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="submit" id="submit" class="btn btn-default">Submit</button>
                     <button type="reset" class="btn btn-default">Reset</button>
 
 
@@ -89,7 +108,14 @@
         </div>
 
     </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+    <script src="script/firebasedatastore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+
+
     <script src="script/validation.js" charset="utf-8"></script>
     <script src="script/checklist.js" charset="utf-8"></script>
     <script src="script/formhandler.js" charset="utf-8"></script>
